@@ -1,0 +1,17 @@
+image: node:14.8.0
+
+pages:
+  script:
+    - npm install
+    - CI=true npm test
+    - CI=true npm run build
+    - CI=true npx nodegui-packer --init MyApp
+    - CI=true npx nodegui-packer --pack ./dist
+    - rm -Rf $CI_PROJECT_DIR/release/*
+    - mv build/* $CI_PROJECT_DIR/release/
+  artifacts:
+    paths:
+      - release
+
+  only:
+    - master
