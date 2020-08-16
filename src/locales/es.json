@@ -1,0 +1,23 @@
+{
+	"Fantasy Names Generator": "Generador de nombres fantásticos",
+	"Select race:": "Selecciona raza:",
+	"Demons": "Demonios",
+	"Dragons": "Dragones",
+	"Drows/Dark Elfs": "Drows/Elfos Oscuros",
+	"Dwarvens": "Enanos",
+	"Elfs": "Elfos",
+	"Gnomes": "Gnomos",
+	"Haflings": "Medianos",
+	"Orcs": "Orcos",
+	"Select sex:": "Selecciona sexo:",
+	"Male": "Hombre",
+	"Female": "Mujer",
+	"Total to generate (1-100):": "Total a generar (1-100):",
+	"Generate names": "Generar nombres",
+	"Save names": "Guardar nombres",
+	"Text file (*.txt)": "Fichero de texto (*.txt)",
+	"An error occurred while saving the file.\nMake sure you have write permissions on the directory.": "Ocurrió un error al salvar el fichero.\nComprueba si tienes permisos de escritura en el directorio.",
+	"File save correctly": "El fichero se guardo correctamente",
+	"Select where to save names": "Selecciona donde se guardaran los nombres",
+	"Accept": "Aceptar"
+}

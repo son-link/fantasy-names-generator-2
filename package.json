@@ -1,0 +1,29 @@
+{
+  "name": "fantasy_names_generator",
+  "version": "1.0.0",
+  "description": "Generate random fantasy names for Elfs, Drows, Dragons, etc.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "test": "webpack && qode --inspect src/index.js"
+  },
+  "keywords": [
+    "nodegui",
+    "fantasy",
+    "roleplay"
+  ],
+  "author": "Alfonso Saavedra \"Son Link\"",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@nodegui/nodegui": "^0.24.0",
+    "i18n": "^0.11.1"
+  },
+  "devDependencies": {
+    "@nodegui/packer": "^1.4.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^6.0.0",
+    "native-addon-loader": "^2.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

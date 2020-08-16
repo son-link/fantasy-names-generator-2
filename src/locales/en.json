@@ -1,0 +1,23 @@
+{
+	"Fantasy Names Generator": "Fantasy Names Generator",
+	"Select race:": "Select race:",
+	"Demons": "Demons",
+	"Dragons": "Dragons",
+	"Drows/Dark Elfs": "Drows/Dark Elfs",
+	"Dwarvens": "Dwarvens",
+	"Elfs": "Elfs",
+	"Gnomes": "Gnomes",
+	"Haflings": "Haflings",
+	"Orcs": "Orcs",
+	"Select sex:": "Select sex:",
+	"Male": "Male",
+	"Female": "Female",
+	"Total to generate (1-100):": "Total to generate (1-100):",
+	"Generate names": "Generate names",
+	"Save names": "Save names",
+	"Text file (*.txt)": "Text file (*.txt)",
+	"An error occurred while saving the file.\nMake sure you have write permissions on the directory.": "An error occurred while saving the file.\nMake sure you have write permissions on the directory.",
+	"File save correctly": "File save correctly",
+	"Select where to save names": "Select where to save names",
+	"Accept": "Accept"
+}
