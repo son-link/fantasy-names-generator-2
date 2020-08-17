@@ -1,12 +1,17 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
+const basePath = __dirname;
+const distPath = 'dist';
 
 module.exports = {
   mode: process.NODE_ENV || "development",
-  entry: "./src",
+  entry: {
+     app: ['./index.js'],
+  },
   target: "node",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.join(basePath, distPath),
     filename: "index.js"
   },
   module: {
@@ -31,5 +36,16 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CleanWebpackPlugin()]
+  node: {
+    __dirname: false
+  },
+  plugins: [
+  	new CleanWebpackPlugin(),
+  	new CopyPlugin({
+      		patterns: [
+        		{ from: 'names', to: 'names' },
+        		{ from: 'locales', to: 'locales' },
+      		],
+      	})
+  ]
 };

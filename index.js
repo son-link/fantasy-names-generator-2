@@ -16,16 +16,18 @@ const {
 } = require('@nodegui/nodegui');
 const fs = require('fs'),
 	fng = require('./fng'),
-	i18n = require('i18n');
+	i18n = require('i18n'),
+	path = require('path');
 
 
 const env = process.env;
 let language = env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES;
 language = language.split('.')[0];
 console.log(language)
+console.log(path.join(__dirname));
 
 i18n.configure({
-	directory: __dirname + '/locales',
+	directory: path.join(__dirname, '/locales'),
 	register: global,
 	fallbacks:{'es_*': 'es'},
 	syncFiles: true

@@ -106,3 +106,4 @@ dist
 # proyect
 deploy/
 package-lock.json
+.vscode
